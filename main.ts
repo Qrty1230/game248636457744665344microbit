@@ -122,7 +122,7 @@ function menu () {
     fallfromtheskygamerandomnumberbetween1and5 = randint(1, 5)
     fallingfromtheskygame()
 }
-input.onGesture(Gesture.TiltLeft, function () {
+input.onButtonPressed(Button.A, function () {
     if (led.point(0, 0)) {
         basic.showLeds(`
             . . . . .
@@ -187,7 +187,7 @@ input.onGesture(Gesture.TiltLeft, function () {
 input.onButtonPressed(Button.AB, function () {
     menu()
 })
-input.onGesture(Gesture.TiltRight, function () {
+input.onButtonPressed(Button.B, function () {
     if (led.point(0, 0)) {
         basic.showLeds(`
             . . . . .
