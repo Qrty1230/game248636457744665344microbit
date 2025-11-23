@@ -111,10 +111,14 @@ function fallingfromtheskygame1 () {
         . . # . .
         `)
     led.plot(1, fallfromtheskygamerandomnumberbetween1and5)
+    led.plot(2, fallfromtheskygamerandomnumberbetween1and5)
+    led.plot(3, fallfromtheskygamerandomnumberbetween1and5)
+    led.plot(4, fallfromtheskygamerandomnumberbetween1and5)
+    if (led.point(5, fallfromtheskygamerandomnumberbetween1and5)) {
+        led.unplot(4, fallfromtheskygamerandomnumberbetween1and5)
+    }
 }
 let fallfromtheskygamerandomnumberbetween1and5 = 0
+fallfromtheskygamerandomnumberbetween1and5 = randint(1, 5)
 loading()
 menu()
-basic.forever(function () {
-    fallfromtheskygamerandomnumberbetween1and5 = randint(1, 5)
-})
